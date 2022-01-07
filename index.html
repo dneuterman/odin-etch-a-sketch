@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" async></script>
 </head>
 <body>
-    <div class="main-container"></div>
+    <div class="content">
+        <div class="settings">
+            <button type="button" class="reset">Reset</button>
+            <button type="button" class="black-setting">Black</button>
+            <button type="button" class="rainbow-setting">Rainbow</button>
+            <div class="color-picker-div">
+                <label for="color-picker">Color Picker</label>
+                <input type="color" name="color-picker" id="color-picker" value="#000000">
+            </div>
+            <label for="grid-resize">16 x 16</label>
+            <input type="range" name="grid-resize" id="grid-resize" min="1" max="100" value="16">
+        </div>
+        <div class="main-container"></div>
+    </div>
 </body>
 </html>
